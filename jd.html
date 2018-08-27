@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>京东</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			background-color: rgb(240, 243, 239);
+			font-family:"Microsoft Yahei";
+			font-size:13px;color:#666;
+		}
+		
+		.jdlogo{
+			position: relative;
+			height: 100px;
+			width: 200px;
+			margin-left: 20px
+		}
+		.search{
+			position: absolute;
+			left: 300px;
+			top: 50px;
+			width:500px;
+			height: 30px;
+			font-family:"Microsoft Yahei";
+			font-size:13px;color:#666;
+		}
+		.shopcar{
+			position: relative;
+			left:  850px;
+			top:-61px;
+			height: 35px;
+			width: 150px;
+			border: 0.3px solid rgb(169, 169, 169);
+			background: #fff;
+			text-align: center;
+		}
+		.shoptip{
+			position: absolute;
+			top: 35px;
+			height: 75px;
+			width: 200px;
+			border: 0.3px solid rgb(169, 169, 169);
+			background: #fff;
+			text-align: center;
+			display: none;
+		}
+		/*
+		.shopcar >span :hover >.shoptip{
+			display: block;
+		}
+		.shopcar >span :hover >.shopcar{
+			border-bottom: none;
+		}*/
+		.shopcar>span{
+			font-family:"Microsoft Yahei";
+			font-size:14px;color:rgb(200, 22, 34);
+			line-height: 35px;
+		}
+		
+		#ladong{
+			position: absolute;
+    		right: 0;
+    		top: 0;
+    		width: 0;
+    		height: 100%;
+   			border-right: 6px solid #7a6e6e;
+		}
+
+		.list{
+			position: relative;
+			width: 200px;
+			height:600px;
+			background-color: white;
+			margin-left: 20px
+		}
+	
+		.list-x{
+			position: absolute;
+			top: 0;
+			left: 200px;
+			background-color: #fff;
+			width: 500px;
+			height: 300px;
+			display: none;
+		}
+		
+		.list>ul{
+			padding-left: 0px
+		}
+
+		li:hover {
+			background:#e0e0e0
+		}
+		.list > ul > li:hover >.list-x{
+			display: block;
+		}
+
+		li{list-style-type: none;
+			padding-bottom: 5px;
+			padding-top: 5px;
+			padding-left: 15px;
+			width: 185px
+		}
+		span:hover{
+			color: red;
+			cursor: pointer;
+		}
+		
+		ul{width: 200px;}
+	</style>
+</head>
+<body>
+	<div><img src="D:\major721\jd.jpg" class="jdlogo"></di>
+	<input type="text" class="search">
+	<div class="shopcar"><span>我的购物车</span>
+		<div class="shoptip">快去购物吧！</div>
+	</div>
+	
+	<div class="list">
+	<ul>
+	<li><span>家用电器</span></li>
+	<li>
+		<span>手机</span>/
+		<span>运营商</span>/
+		<span>数码</span>
+		<div class="list-x">扩展菜单</div>
+	</li>
+	<li>
+		<span>电脑</span>/
+		<span>办公</span>
+	</li>
+	<li>
+		<span>家居</span>/
+		<span>家具</span>/
+		<span>家装</span>/
+		<span>厨具</span>
+	</li>
+	<li>
+		<span>男装</span>/
+		<span>女装</span>/
+		<span>童装</span>/
+		<span>内衣</span>
+	</li>
+	<li>
+		<span>美妆</span>/
+		<span>个护清洁</span>/
+		<span>宠物</span>
+	</li>
+	<li>
+		<span>女鞋</span>/
+		<span>箱包</span>/
+		<span>钟表</span>/
+		<span>珠宝</span>
+	</li>
+	<li>
+		<span>男鞋</span>/
+		<span>运动</span>/
+		<span>户外</span>
+	</li>
+	<li>
+		<span>房产</span>/
+		<span>汽车</span>/
+		<span>汽车用品</span>
+	</li>
+	<li>
+		<span>母婴</span>/
+		<span>玩具乐器</span>
+	</li>
+	<li>
+		<span>食品</span>/
+		<span>酒类</span>/
+		<span>生鲜</span>/
+		<span>特产</span>
+	</li>
+	<li>
+		<span>艺术</span>/
+		<span>礼品鲜花</span>/
+		<span>农资绿植</span>
+	</li>
+		</ul>
+	</div>
+
+	<div id="ladong">
+
+	</div>
+</body>
+</html>
